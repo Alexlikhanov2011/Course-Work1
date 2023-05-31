@@ -1,50 +1,52 @@
+
 public class Employee {
-    private String FullName;
-    private int Departament;
-    private float Salary;
-    private static int Counter;
-    private int Id;
+    private String fullName;
+    private int departament;
+    private float salary;
+    private static int counter;
+    private int id;
+
+    public Employee (String fullName1, int departament1, float salary1){
+        this.fullName=fullName1;
+        this.departament = departament1;
+        this.salary = salary1;
+        this.id=counter++;
+        if (salary>=0) {
+            this.salary = salary;
+        }
+    }
 
     public String getFullName() {
-        return this.FullName;
+        return this.fullName;
     }
 
     public int getDepartament() {
-        return this.Departament;
+        return this.departament;
     }
 
     public float getSalary() {
-        return this.Salary;
+        return this.salary;
     }
 
 
     public int getId() {
-        return this.Id;
+        return this.id;
     }
 
-    public void setFullName(String fullName) {
-        this.FullName = fullName;
-    }
 
-    public void setDepartament(int departament) {
-        this.Departament = departament;
+    public void setDepartament(int departament1) {
+        this.departament = departament1;
     }
 
     public void setSalary(float salary) {
-        this.Salary = salary;
+        this.salary = salary;
     }
-    public Employee (String fullName, int departament, float salary){
-     FullName=fullName;
-     Departament = departament;
-    Salary = salary;
-    Id=Counter++;
-        if (salary>=0) {
-            this.Salary = Salary;
-        }
-    }
+
     @Override
     public String toString() {
-        return "Id: " + Id + " Фамилия Имя Отчество: " + FullName + " Отдел: " + Departament + " Зарплата: " + Salary;
+        return "Id: " + id + " Фамилия Имя Отчество: " + fullName + " Отдел: " + departament + " Зарплата: " + salary;
     }
+
+
 
 }
