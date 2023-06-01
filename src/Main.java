@@ -56,21 +56,7 @@ public class Main {
                 System.out.println(employee.getFullName());
             }
         }
-    }
 
-    private static void minSalary(Employee[] employees) {
-        int min = 99999999;
-        for (Employee employee : employees) {
-            if (employee != null) {
-                min = (int) Math.min(min, employee.getSalary());
-            }
-        }
-        for (Employee employee : employees) {
-            if (employee.getSalary() == min) {
-                System.out.println("Сотрудник с наименьшей зарплатой " + employee);
-                break;
-            }
-        }
     }
 
     private static int sumSalary(Employee[] employees) {
