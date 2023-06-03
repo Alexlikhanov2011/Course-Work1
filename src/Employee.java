@@ -6,11 +6,10 @@ public class Employee {
     private static int counter;
     private int id;
 
-
-    public Employee (String fullName1, int departament1, float salary1){
-        this.fullName=fullName1;
-        this.departament = departament1;
-        this.salary = salary1;
+       public Employee (String fullName, int departament, float salary){
+        this.fullName=fullName;
+        this.departament = departament;
+        this.salary = salary;
         this.id=counter++;
         if (salary>=0) {
             this.salary = salary;
@@ -28,15 +27,14 @@ public class Employee {
     public float getSalary() {
         return this.salary;
     }
+
     public float getMinSalary() {
         return this.salary;
     }
 
-
     public int getId() {
         return this.id;
     }
-
 
     public void setDepartament(int departament1) {
         this.departament = departament1;
@@ -50,7 +48,5 @@ public class Employee {
     public String toString() {
         return "Id: " + id + " Фамилия Имя Отчество: " + fullName + " Отдел: " + departament + " Зарплата: " + salary;
     }
-
-
 
 }
