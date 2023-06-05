@@ -6,14 +6,13 @@ public class Employee {
     private static int counter;
     private int id;
 
-       public Employee (String fullName, int departament, float salary){
-        this.fullName=fullName;
+
+    public Employee(String fullName, int departament, float salary) {
+        this.fullName = fullName;
         this.departament = departament;
         this.salary = salary;
-        this.id=counter++;
-        if (salary>=0) {
-            this.salary = salary;
-        }
+        this.id = counter++;
+        this.salary = salary;
     }
 
     public String getFullName() {
@@ -28,9 +27,6 @@ public class Employee {
         return this.salary;
     }
 
-    public float getMinSalary() {
-        return this.salary;
-    }
 
     public int getId() {
         return this.id;

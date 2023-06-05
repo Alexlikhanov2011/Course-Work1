@@ -21,9 +21,9 @@ public class Main {
 
         printFullName(employees);
 
-        System.out.println(foundMinSalaryEmployee(employees));
+        System.out.println("Сотрудник с наименьшей зарплатой: " + foundMinSalaryEmployee(employees));
 
-        System.out.println(foundMaxSalaryEmployee(employees));
+        System.out.println("Сотрудник с наибольшей зарплатой: " + foundMaxSalaryEmployee(employees));
     }
 
     private static Employee foundMaxSalaryEmployee(Employee[] employees) {
@@ -33,9 +33,7 @@ public class Main {
                 employeeWithMaxSalary = employees[i];
             }
         }
-        System.out.println();
-        System.out.println("Сотрудник с наибольшей зарплатой: ");
-        return employeeWithMaxSalary;
+                return employeeWithMaxSalary;
     }
 
     private static Employee foundMinSalaryEmployee(Employee[] employees) {
@@ -45,9 +43,7 @@ public class Main {
                 employeeWithMinSalary = employees[i];
             }
         }
-        System.out.println();
-        System.out.println("Сотрудник с наименьшей зарплатой: ");
-        return employeeWithMinSalary;
+               return employeeWithMinSalary;
     }
 
     private static void printInfo(Employee[] employees) {
@@ -57,7 +53,6 @@ public class Main {
             }
         }
     }
-
     private static void printFullName(Employee[] employees) {
         System.out.println();
         System.out.println("Список всех сотрудников: ");
